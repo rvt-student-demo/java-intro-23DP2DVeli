@@ -1,12 +1,22 @@
 package lv.rvt;
-
+import java.util.Scanner;
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println("Hello RVT!");
-        // Make your first Hello World app!
+        Scanner scanner = new Scanner(System.in);
 
+        //Mēs gribām uzzinat lietotāja: Vārdu, Uzvārdu, Gruppu
+
+        System.out.print("Ievadi savu Vārdu: ");
+        String name = scanner.nextLine();
+        System.out.print("Ievadi savu Uzvārdu: ");
+        String surname = scanner.nextLine();
+        System.out.print("Ieavadi savu Gruppu: ");
+        String group = scanner.nextLine();
+
+        System.out.println(name + " " + surname + " " + group);
     }
-
+ 
 }
+
