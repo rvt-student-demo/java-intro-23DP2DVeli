@@ -6,16 +6,17 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
 
-        //Mēs gribām uzzinat lietotāja: Vārdu, Uzvārdu, Gruppu
-
-        System.out.print("Ievadi savu Vārdu: ");
-        String name = scanner.nextLine();
-        System.out.print("Ievadi savu Uzvārdu: ");
-        String surname = scanner.nextLine();
-        System.out.print("Ieavadi savu Gruppu: ");
+        System.out.print("Chicken: ");
+        String chicken = scanner.nextLine();
+        System.out.print("Bacon (kg): ");
+        String bacon = scanner.nextLine();
+        System.out.print("Tractor: ");
         String group = scanner.nextLine();
 
-        System.out.println(name + " " + surname + " " + group);
+        System.out.println("And finally, a summary:");
+        System.out.println(chicken);
+        System.out.println(bacon);
+        System.out.println(group);
     }
  
 }
