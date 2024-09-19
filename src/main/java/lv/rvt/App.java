@@ -10,11 +10,12 @@ public class App
 
         System.out.println("Value 1: ");
         int value1 = Integer.valueOf(scanner.nextLine());
-        System.out.println("Value 2: ");
-        int value2 = Integer.valueOf(scanner.nextLine());
-        double result = Math.sqrt((value1 + value2));
-        System.out.println(result);
-
+        if (value1 < 0) {
+            int result = value1 * (-1);
+            System.out.println(result);
+        } else {
+            System.out.println(value1);
+        }
     }
 }
 
