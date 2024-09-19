@@ -6,25 +6,34 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println();
-        int number = Integer.valueOf(scanner.nextLine());
-        if (number < 0) {
-            System.out.println("impossible!");
-        } else if (number <= 49) {
-            System.out.println("Grade: failed");
-        } else if (number >= 50 && number <= 59 ) {
-            System.out.println("Grade: 1");            
-        } else if (number >= 60 && number <= 69) {
-            System.out.println("Grade: 2");
-        } else if (number >= 70 && number <= 79) {
-            System.out.println("Grade: 3");
-        } else if (number >= 80 && number <= 89) {
-            System.out.println("Grade: 4");
-        } else if (number >= 90 && number <= 100) {
-            System.out.println("Grade: 5");
-        } else if (number > 100) {
-            System.out.println("Grade: incredible!");
+        
+
+        System.out.println("Value of the gift?");
+        double value = Double.valueOf(scanner.nextLine());
+        double tax1 = (100 + (value - 5000)*0.8);
+        double tax2 = (1700 + (value - 25000)*0.10);
+        double tax3 = (4700 + (value - 55000)*0.12);
+        double tax4 = (22100 + (value - 200000)*0.15);
+        double tax5 = (142100 + (value - 1000000)*0.17);
+        
+        
+        if (value < 5000) {
+            System.out.println("No tax!");
+        } else if (value >= 5000 && value < 25000){
+            System.out.println("Tax:" + tax1);
+        } else if (value >= 25000 && value < 55000){
+            System.out.println("Tax:" + tax2);
+        } else if (value >= 55000 && value < 200000){
+            System.out.println("Tax:" + tax3);
+        } else if (value >= 200000 && value < 1000000){
+            System.out.println("Tax:" + tax4);
+        } else if (value >= 1000000){
+            System.out.println("Tax:" + tax5);
         }
+
     }
 }
+
+
+
 
