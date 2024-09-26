@@ -7,11 +7,14 @@ public class App
     public static void main( String[] args )
     {
         Scanner scanner = new Scanner(System.in);
-        int x = Integer.valueOf(scanner.nextLine());
-
-        for (int num = x; num <= 100; num++) {
-            System.out.println(num);
-}
+        System.out.println("Type a number: ");
+        int end = Integer.valueOf(scanner.nextLine());
+        int factorial = 1;
+        for (int i = 1; i <= end; i++) {
+            factorial *=i;
+        }
+        
+        System.out.println("Factorial is " + factorial);
     }
 }
 
