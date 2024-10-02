@@ -8,7 +8,7 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
         int num = Integer.valueOf(scanner.nextLine());
-        printUntilNumber(5);
+        printUntilNumber(num);
         
     }
 
