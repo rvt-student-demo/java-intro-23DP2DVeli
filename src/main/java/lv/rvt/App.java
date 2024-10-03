@@ -1,25 +1,28 @@
 package lv.rvt;
 import java.util.Scanner;
-
-import javax.swing.plaf.TreeUI;
 public class App 
+
+
 {
-    public static void main( String[] args )
-    {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int num = Integer.valueOf(scanner.nextLine());
-        printUntilNumber(num);
-        
+        int a = Integer.valueOf(scanner.nextLine());
+        int b = Integer.valueOf(scanner.nextLine());
+
+        divisibleByThreeInRange(a, b);
     }
 
-    public static void printUntilNumber(int numOfTimes) {
-        int i = 1;
-        while (i <= numOfTimes) {
-            System.out.println(i++); 
+    public static void divisibleByThreeInRange(int beginning, int end) {
+        for (int i = beginning; i <= end; i++) {
+            if (i % 3 == 0) {
+                System.out.println(i);
+            }    
+        } 
     }
 }
-}
 
 
 
 
+
+ 
