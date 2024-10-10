@@ -8,7 +8,7 @@ import java.util.*;
 public class Stars {
     public static void printStars(int number) {
         for (int i = 0; i <= number; i++) {
-        System.out.println('*');
+        System.out.print('*');
         }
     }
 
@@ -27,9 +27,15 @@ public class Stars {
             }
             System.out.println();
         }
-        
+    }   
     
+    public static void printTriangle(int size) {
+        for (int i = 0; i < size; i++){
+            printStars(i);
+            System.out.println();
+        }
     
+    }
     
     
     
@@ -41,4 +47,4 @@ public class Stars {
     
     
     }
-}
+
