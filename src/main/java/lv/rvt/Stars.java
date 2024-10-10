@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Stars {
     public static void printStars(int number) {
-        for (int i = 0; i <= number; i++) {
+        for (int i = 0; i < number; i++) {
         System.out.print('*');
         }
     }
@@ -36,15 +36,21 @@ public class Stars {
         }
     
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+    public static void printRightTriangle(int size) {
+        for (int j = 1; j < size + 1; j++){
+                printSpace(size-j);
+                printStars(j);
+            System.out.println();
+        }
     }
+    
+
+    public static void printSpace(int number) {
+        for (int i = 0; i < number; i++) {
+        System.out.print(' ');
+        }
+    }    
+    
+}
 
