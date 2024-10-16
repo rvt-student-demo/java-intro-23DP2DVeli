@@ -51,6 +51,9 @@ public class Stars {
         System.out.print(' ');
         }
     }    
-    
+
+
+
+
 }
 
