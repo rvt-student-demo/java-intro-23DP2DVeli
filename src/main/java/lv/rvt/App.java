@@ -14,11 +14,36 @@ public class App {
             if (x == num) {
                 System.out.println("RIGHT!" );
                 break;
+            
             } else {
-                System.out.println("wrong" );
-                continue;
+                if (i == 2) {
+                System.out.println("wrong");
+                System.out.println("The correct number was " + num + ". You have lost the game.");
+                break;
+                }            
+            temperature(x, num);
+                
             }
+        }   
+    }
+    public static void temperature(int x, int num){
+            if (x == num-3 || x == num+3) {
+                System.out.println("cold");
+            }
+            else if (x == num-2 || x == num+2) {
+                System.out.println("warm");
+            }
+            else if (x == num-1 || x == num+1)
+                System.out.println("hot");
+
+
+            
+            
+
+            
         }
+        
+    
     }
 
-}
+
