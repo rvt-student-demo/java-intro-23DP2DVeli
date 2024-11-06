@@ -11,26 +11,24 @@ public class App {
         Statistics odd = new Statistics();
         Statistics even = new Statistics();
         System.out.println("Enter numbers:");
-
         while (true) {
-            try {
-                int input = Integer.valueOf(scanner.nextLine());
-                if (input == -1) {
-                    break;
-                }
-                if (input % 2 == 0) {
-                    even.addNumber(input);
-                } else {
-                    odd.addNumber(input);
-                }
-                sum.addNumber(input);
-            } catch (NumberFormatException e) {
-                System.out.println("Invalid input. Please enter a valid number.");
-            }
-        }
 
+            int input = Integer.valueOf(scanner.nextLine());
+            if (input == -1) {
+                break;
+            }
+            if (input % 2 == 0) {
+                even.addNumber(input);
+            }
+            if (input % 2 != 0) {
+                odd.addNumber(input);
+            }
+            sum.addNumber(input);
+
+        }
         System.out.println("Sum: " + sum.sum());
         System.out.println("Sum of even numbers: " + even.sum());
         System.out.println("Sum of odd numbers: " + odd.sum());
     }
-}
+    }
+
