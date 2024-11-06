@@ -43,8 +43,8 @@ public class Stars {
                 printStars(j);
             System.out.println();
         }
-    }
-    
+        }
+        
 
     public static void printSpace(int number) {
         for (int i = 0; i < number; i++) {

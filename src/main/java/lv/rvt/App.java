@@ -1,21 +1,15 @@
 package lv.rvt;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
+public class App 
+{
+    public static void main(String[] args) {
+        Agent bond = new Agent("James", "Bond");
 
-import java.util.Random;
-public class App {
-    public class MainProgram {
-        public static void main(String[] args) {
-            DecreasingCounter counter = new DecreasingCounter(100);
-    
-            counter.printValue();
-    
-            counter.reset();
-            counter.printValue();
-    
-            counter.decrement();
-            counter.printValue();
-        }
+        bond.toString();
+        System.out.println(bond);
+
+        Agent ionic = new Agent("Ionic", "Bond");
+        System.out.println(ionic);
     }
 
 }
