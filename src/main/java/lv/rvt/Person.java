@@ -17,14 +17,16 @@ public class Person {
         this.height = newHeight;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     public void setWeight(int newWeight) {
         this.weight = newWeight;
     }
 
     public double bodyMassIndex() {
-        double heigthPerHundred = this.height / 100.0;
-        return this.weight / (heigthPerHundred * heigthPerHundred);
+        double heightPerHundred = this.height / 100.0; // Corrected typo here
+        return this.weight / (heightPerHundred * heightPerHundred);
     }
-
-    // ...
 }
