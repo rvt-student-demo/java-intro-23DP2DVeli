@@ -1,12 +1,12 @@
 package lv.rvt;
 
-public class Person {
+public class Persone {
     private String name;
     private int age;
     private int weight;
     private int height;
 
-    public Person(String initialName) {
+    public Persone(String initialName) {
         this.age = 0;
         this.weight = 0;
         this.height = 0;
