@@ -1,36 +1,36 @@
 package lv.rvt;
 
 public class Person {
-    private String name;
-    private int age;
-    private int weight;
-    private int height;
+	private String name;
+	private int age;
+	private int weight;
+	private int height;
 
-    public Person(String initialName, int age, int weight, int height) {
-        this.age = age;
-        this.weight = 0;
-        this.height = 0;
-        this.name = initialName;
-    }
+	public Person(String name, int age, int weight, int height) {
+		this.name = name;
+		this.age = age;
+		this.weight = weight;
+		this.height = height;
+	}
 
-    public void setHeight(int newHeight) {
-        this.height = newHeight;
-    }
+	public String getName() {
+		return this.name;
+	}
 
-    public Integer getAge() {
-        return this.age;
-    }
+	public int getAge() {
+		return this.age;
+	}
 
-    public String getName() {
-        return this.name;
-    }
+	public int getWeight() {
+		return this.weight;
+	}
 
-    public void setWeight(int newWeight) {
-        this.weight = newWeight;
-    }
+	public int getHeight() {
+		return this.height;
+	}
 
-    public double bodyMassIndex() {
-        double heightPerHundred = this.height / 100.0; // Corrected typo here
-        return this.weight / (heightPerHundred * heightPerHundred);
-    }
+	@Override
+	public String toString() {
+		return String.format(" %s, Age: %d, Weight: %d, Height: %d", name, age, weight, height);
+	}
 }
