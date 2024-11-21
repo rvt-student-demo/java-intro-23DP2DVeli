@@ -26,5 +26,5 @@ public class Persone {
         return this.weight / (heigthPerHundred * heigthPerHundred);
     }
 
-    // ...
+    
 }

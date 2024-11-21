@@ -8,6 +8,10 @@ import java.util.ArrayList;
 public class PersonManager {
 
 
+    public static void addPerson(Person person) {
+        
+    }
+
     public static ArrayList<Person>getPersonList() {
             ArrayList<Person> personList = new ArrayList<>();
         String csvFile = "/workspaces/java-intro-23DP2DVeli/data/persons.csv"; 
@@ -28,4 +32,6 @@ public class PersonManager {
         }
         return personList;
     }
+
+
 }
