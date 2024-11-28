@@ -6,7 +6,7 @@ public class Person {
 	private int weight;
 	private int height;
 
-	public Person(String name, int age, int weight, int height) {
+	public Person(String name, int age,  int height, int weight) {
 		this.name = name;
 		this.age = age;
 		this.weight = weight;
@@ -27,6 +27,11 @@ public class Person {
 
 	public int getHeight() {
 		return this.height;
+	}
+
+
+	public void setWeight(int newweight) {
+		this.weight = newweight;
 	}
 
 	@Override

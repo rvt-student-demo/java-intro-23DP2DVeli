@@ -25,6 +25,7 @@ public class Counter {
     }
 
     public void increase(int increaseBy) {
+        
         if (increaseBy >= 0) {
             this.counter = this.counter + increaseBy;
         }
