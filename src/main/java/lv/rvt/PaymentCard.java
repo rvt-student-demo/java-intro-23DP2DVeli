@@ -8,7 +8,6 @@ public class PaymentCard {
     }
 
     public String toString() {
-        // Round the balance to 1 decimal place for better display
         return String.format("The card has a balance of " + this.balance + " euros");
     }
 
@@ -31,4 +30,17 @@ public class PaymentCard {
             this.balance = 150;
         }
     }
+
+    public double balance() {
+        return this.balance;
+    }
+
+    public boolean takeMoney(double amount) {
+        if (this.balance >= amount) {
+            this.balance = this.balance - amount;
+            return true;
+        }
+        return false;
+    }
+ 
 }
