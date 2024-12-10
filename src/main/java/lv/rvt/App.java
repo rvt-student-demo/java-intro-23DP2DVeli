@@ -33,7 +33,7 @@ public class App {
                 System.out.println("List of persons:");
                 
                 // Header
-                System.out.printf("| %-20s | %-5s | %-7s | %-7s | %-8s |\n", "Name", "Age", "Weight", "Height", "BMI");
+                System.out.printf("| %-20s | %-5s | %-7s | %-7s | %-8s |\n", "Name", "Age", "Height", "Weight", "BMI");
                 System.out.println("|----------------------|-------|---------|---------|----------|");
                 
                 // Print the list
