@@ -6,15 +6,19 @@ import java.util.*;
 import java.io.*;
 
 public class App {
-    public static void main ( String[] args )
-  {
-     Box box = new Box( 2.5, 5.0, 6.0 ) ;
-     Box box2 = new Box(9,9,9);
-     System.out.println(box.nests(box2)); 
-     System.out.println(box2.nests(box)); 
-     System.out.println( "Area: "  + box.area() + " volume: " + box. volume() );
+    public static void main(String[] args) {
+      ArrayList<Person> persons = new ArrayList<Person>();
+      persons.add(new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200));
+      persons.add(new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028"));
+  
+      printPersons(persons);
 
 
   }
+    public static void printPersons(ArrayList<Person> persons) {
+      for (Person person : persons) { 
+          System.out.println(person); 
+      }
 
+  }
 }

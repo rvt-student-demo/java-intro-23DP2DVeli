@@ -44,11 +44,11 @@ public class Box {
     }
 
     private double faceArea() {
-        return this.h * this.w;
+        return this.h * this.l;
     }
 
     private double topArea() {
-        return this.l * this.h;
+        return this.w * this.l;
     }
 
     private double sideArea() {
