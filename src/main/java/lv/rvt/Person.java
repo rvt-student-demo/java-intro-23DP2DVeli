@@ -10,6 +10,7 @@ public class Person {
 	private int height;
 	private SimpleDate date;
 
+
 	public Person(String name, int age,  int height, int weight) {
 		this.name = name;
 		this.age = age;
@@ -39,10 +40,30 @@ public class Person {
 		return name;
 	}
 
+	public Integer getAge() {
+		return age;
+	}
+
+	public Integer getWeight() {
+		return weight;
+	}
+
+	public Integer getHeight() {
+		return height;
+	}
+
+
+
+
 
 	@Override
 	public String toString() {
 		return String.format(" %s \n	%s,", name, adress);
 	}
+
+	public String toCsvRow() {
+		return String.format("%s, %d, %d, %d", name, age, weight, height);
+	}
+	
 
 }
